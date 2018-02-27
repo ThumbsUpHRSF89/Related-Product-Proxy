@@ -12,7 +12,7 @@ module.exports = {
     ],
   },
   output: {
-    filename: './public/bundle.js'
+    filename: './public/bundle.js',
   },
   resolve: {
     extensions: ['.js', '.jsx'],

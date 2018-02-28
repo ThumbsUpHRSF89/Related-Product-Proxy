@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/style.css">
     <title>HACKZON</title>
+    
   </head>
   <body>
     <!-- <div id="iteminfo"></div>
@@ -18,6 +19,7 @@
     <script src="http://localhost:8004/app.js"></script> -->
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
     <script>
+      var id = "<%= id %>";
       // ReactDOM.render(
       //   React.createElement(Info),
       //   document.getElementById('iteminfo')
@@ -27,7 +29,7 @@
       //   document.getElementById('countdown')
       // );
       ReactDOM.render(
-        React.createElement(RelatedProduct),
+        React.createElement(RelatedProduct, {id: 34}),
         document.getElementById('relatedProduct')
       );
       // ReactDOM.render(

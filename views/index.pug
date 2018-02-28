@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/style.css">
-    <title>HACKZON</title>
-    <script src="/lib/react.development.js"></script>
-    <script src="/lib/react-dom.development.js"></script>
-    <script src="http://localhost:8001/bundle.js"></script>
-  </head>
-  <body>
-    <div id="relatedProduct">dddd</div>
-    <script>
+
+html
+  head
+    title=id
+
+    script(src="/lib/react.development.js")
+    script(src="/lib/react-dom.development.js")
+    script(src="http://localhost:8001/bundle.js")
+
+  body
+    #relatedProduct
+    script.
       ReactDOM.render(
-        React.createElement(RelatedProduct, {id: 34}),
+        React.createElement(RelatedProduct, {id: #{id}}),
         document.getElementById('relatedProduct')
       )
-    </script>
-  </body>
-</html>
+

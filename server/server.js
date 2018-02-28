@@ -15,8 +15,8 @@ app.use(express.static(path.join(__dirname, '../views')));
 // });
 app.get('/:id/', (req, res) => {
   console.log('00330')
-  let ida = req.params.id;
-  res.render('index', { id: 10 });
+  const idNum = req.params.id;
+  res.render('index', { id: idNum });
 });
 
 // app.use('/:id/', express.static(path.join(__dirname, '../public')));

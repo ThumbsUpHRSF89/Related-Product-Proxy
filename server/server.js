@@ -9,7 +9,7 @@ app.use(morgan('dev'));
 app.set('view engine', 'pug');
 app.use(express.static(path.join(__dirname, '../views')));
 
-app.get('/:id/', (req, res) => {
+app.get('/product/:id/', (req, res) => {
   const idNum = req.params.id;
   res.render('index', { id: idNum });
 });

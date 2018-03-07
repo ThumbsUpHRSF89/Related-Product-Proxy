@@ -9,6 +9,7 @@ app.use(morgan('dev'));
 // app.set('view engine', 'pug');
 app.use(express.static(path.join(__dirname, '../public')));
 app.use('/product/:id/', express.static(path.join(__dirname, '../public')));
+app.use('/:id/', express.static(path.join(__dirname, '../public')));
 
 // app.get('/product/:id/', (req, res) => {
 //   const idNum = req.params.id;

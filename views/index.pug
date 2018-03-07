@@ -6,12 +6,18 @@ html
     script(src="/lib/react.development.js")
     script(src="/lib/react-dom.development.js")
     script(src="http://localhost:8001/bundle.js")
+    script(src="http://localhost:8003/bundle.js")
 
   body
     #relatedProduct
+    #app
     script.
       ReactDOM.render(
-        React.createElement(RelatedProduct, {id: #{id}}),
+        React.createElement(RelatedProduct),
         document.getElementById('relatedProduct')
+      )
+      ReactDOM.render(
+        React.createElement(App),
+        document.getElementById('app')
       )
 

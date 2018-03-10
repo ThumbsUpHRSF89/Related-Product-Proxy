@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/style.css">
     <title>Hackson</title>
+    <link rel="shortcut icon" href="2.ico" />
   </head>
   <body>
     <div id="relatedProduct"></div>
@@ -13,21 +14,22 @@
     <script src="/lib/react.development.js"></script>
     <script src="/lib/react-dom.development.js"></script>
     <script src="http://localhost:8001/bundle.js"></script>
-    <script src="http://localhost:8002/bundle.js"></script>
-    <script src="http://localhost:8003/bundle.js"></script>
+    <!-- <script src="http://localhost:8002/bundle.js"></script>
+    <script src="http://localhost:8003/bundle.js"></script> -->
+  
     <script>
       ReactDOM.render(
         React.createElement(RelatedProduct),
         document.getElementById('relatedProduct')
       );
-      ReactDOM.render(
-        React.createElement(App),
-        document.getElementById('app')
-      );
-      ReactDOM.render(
-        React.createElement(ReviewSection),
-        document.getElementById('reviewSection')
-      );
+      // ReactDOM.render(
+      //   React.createElement(App),
+      //   document.getElementById('app')
+      // );
+      // ReactDOM.render(
+      //   React.createElement(ReviewSection),
+      //   document.getElementById('reviewSection')
+      // );
     </script>
   </body>
 </html>

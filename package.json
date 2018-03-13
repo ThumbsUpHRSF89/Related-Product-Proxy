@@ -25,7 +25,8 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "request": "^2.83.0",
-    "webpack": "^3.11.0"
+    "webpack": "^3.11.0",
+    "nodemon": "^1.17.1"
   },
   "devDependencies": {
     "eslint": "^4.9.0",

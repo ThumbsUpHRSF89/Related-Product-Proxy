@@ -7,15 +7,17 @@
     <link rel="shortcut icon" href="2.ico" />
   </head>
   <body>
+    <div id="detail"></div>
     <div id="relatedProduct"></div>
     <div id="app"></div>
     <div id="reviewSection"></div>
-    <div id="reviews"></div>
     <script src="/lib/react.development.js"></script>
     <script src="/lib/react-dom.development.js"></script>
-    <script src="http://localhost:8001/bundle.js"></script>
-    <!-- <script src="http://localhost:8002/bundle.js"></script>
-    <script src="http://localhost:8003/bundle.js"></script> -->
+    <script src="http://localhost:8000/api/productDtail"></script>
+    <script src="http://localhost:8000/api/relatedProduct"></script>
+    <!-- <script src="http://localhost:8000/api/productComparison"></script> -->
+    <script src="http://localhost:8000/api/productReview"></script>
+
   
     <script>
       ReactDOM.render(
@@ -26,10 +28,14 @@
       //   React.createElement(App),
       //   document.getElementById('app')
       // );
-      // ReactDOM.render(
-      //   React.createElement(ReviewSection),
-      //   document.getElementById('reviewSection')
-      // );
+      ReactDOM.render(
+        React.createElement(ReviewSection),
+        document.getElementById('reviewSection')
+      );
+      ReactDOM.render(
+        React.createElement(ItemDetails),
+        document.getElementById('detail')
+      );
     </script>
   </body>
 </html>

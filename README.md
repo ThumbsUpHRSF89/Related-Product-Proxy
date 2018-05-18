@@ -13,3 +13,4 @@ Proxy server for Amazon Product Page Clone Project.
 #### Development
 
 * `npm start`
+This starts a webserver at http://localhost:8000

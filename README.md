@@ -1,4 +1,4 @@
-# Project Name
+###Project Name
 
 Ivy Proxy Sever
 
@@ -6,11 +6,11 @@ Ivy Proxy Sever
 
 Proxy server for Amazon Product Page Clone Project. 
 
-### Installing Dependencies
+## Installing Dependencies
 
 * `npm install`
 
-#### Development
+## Development
 
 * `npm start`
 This starts a webserver at http://localhost:8000

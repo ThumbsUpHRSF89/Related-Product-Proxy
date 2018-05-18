@@ -45,7 +45,7 @@ app.get('/api/productReview', (req, res) => {
   });
 });
 app.get('/api/relatedProduct', (req, res) => {
-  request('http://related-product:8001/bundle.js', (err, response, body) => {
+  request('http://127.0.0.1:8001/bundle.js', (err, response, body) => {
     if (err) {
       console.log('Microservice request error: ', err);
       res.send(err);
